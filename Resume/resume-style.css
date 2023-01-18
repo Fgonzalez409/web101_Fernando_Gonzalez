@@ -1,0 +1,66 @@
+body {
+    max-width:900pt;
+}
+#header-grid {
+    display:grid;
+    grid-template-columns: .5fr 1.5fr;
+    grid-template-rows: 200pt;
+    column-gap:20pt;
+    margin-right: 20pt;
+}
+
+.grid-item-3 {
+    padding-left: 30pt;
+    position:relative;
+    top:-20pt;
+}
+
+#name {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 1000;
+}
+
+.grid-item-2 {
+    /* code to stretch the name (Nole Musk) */
+    transform-origin: left;
+    font-size: 2em;
+    transform: scale(2,0.8);
+    width:52%;
+}
+
+
+img {
+    object-fit: cover;
+    overflow: hidden;
+    box-shadow: -5px 5px 3px;
+    width: 125pt;
+    height: 125pt;
+    margin-left: 35pt;
+    margin-top:20pt;
+}
+
+.columns {
+    display:grid;
+    grid-template-columns: .50fr 1.5fr;
+    column-gap: 20pt;
+}
+
+.columns > #left-column {
+    text-align: center;
+    margin-left: 5pt;
+    background-color: blueviolet;
+    padding-top: 20pt;
+}
+
+#left-column > hr {
+    width: 75%;
+}
+
+
+article:hover {
+    -webkit-transform: scale(1.1);
+}
+
+hr {
+    width: 100%;
+}
