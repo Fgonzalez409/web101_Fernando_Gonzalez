@@ -1,5 +1,14 @@
 body {
     max-width:900pt;
+    height: 1000px;
+    margin: auto;
+    background-color: black;
+}
+.grid-container {
+    margin: auto;
+    max-width: 900px;
+    height: 900px;
+    background-color: white;
 }
 #header-grid {
     display:grid;
@@ -28,6 +37,10 @@ body {
     width:52%;
 }
 
+.grid-item-4 {
+    position:relative;
+    top:-20pt;
+}
 
 img {
     object-fit: cover;
@@ -43,16 +56,19 @@ img {
     display:grid;
     grid-template-columns: .50fr 1.5fr;
     column-gap: 20pt;
+    height:540px;
 }
 
 .columns > #left-column {
     text-align: center;
+    line-height:35px;
     margin-left: 5pt;
     background-color: blueviolet;
     padding-top: 20pt;
 }
 
 #left-column > hr {
+    margin: auto;
     width: 75%;
 }
 
@@ -62,5 +78,22 @@ article:hover {
 }
 
 hr {
-    width: 100%;
+    width: 75%;
+}
+
+#name {
+    width:85%;
+}
+
+h3 {
+    color: #645CBB;
+}
+
+.stretch-text {
+    letter-spacing: 5pt;
+    margin-bottom: 10pt;
+}
+
+h4 {
+    margin-top:10pt;
 }
