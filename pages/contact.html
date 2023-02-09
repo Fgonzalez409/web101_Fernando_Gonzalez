@@ -14,84 +14,79 @@
 <body>
   <div id="form-container">
     <form class="form" action="results.html" method="GET" enctype="multipart/form-data">
-
-      <!-- Personal detail section -->
-      <div>
-        <label for="name">Name</label>
-        <input type="text" name="name" id="name" >
-      </div>
-
-      <div>
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email" >
-      </div>
-
-      <!-- Textarea -->
-      <div>
-        <label for="bio"></label>
-        <textarea id="bio" name="bio" placeholder="comments" maxlength="500" minlength="30"></textarea>
-      </div>
-
-      <!-- How did you hear about me section -->
-      <div>
-        How did you hear about me?
+      <div class="alignForm">
+        <!-- Personal detail section -->
         <div>
-          <label for="classmate">Classmate</label>
-          <input type="checkbox" name="classmate" id="classmate">
+          <label for="name">Name</label><br>
+          <input class="textBox" height="50px" type="text" name="name" id="name" >
         </div>
 
         <div>
-          <label for="resumeSubmission">Resume Submission</label>
-          <input type="checkbox" name="resumeSubmission" id="resumeSubmission">
+          <label for="email">Email</label><br>
+          <input class="textBox"type="email" name="email" id="email" >
         </div>
 
+        
+        <!-- Optional birthday wish -->
+        <div id="optionalText">
+          <label for="date">(Optional) Enter your birthday to receive your birthday wish! <br> </label>
+          <input class="textBox"type="date" name="date" id="date" min="2019-06-10">
+        </div>
+
+        <!-- How did you hear about me section -->
         <div>
-          <label for="linkedIn">LinkedIn</label>
-          <input type="checkbox" name="linkedIn" id="linkedIn">
+          How did you hear about me?
+          <div>
+            <label for="classmate">Classmate</label>
+            <input type="checkbox" name="classmate" id="classmate">
+          </div>
+
+          <div>
+            <label for="resumeSubmission">Resume Submission</label>
+            <input type="checkbox" name="resumeSubmission" id="resumeSubmission">
+          </div>
+
+          <div>
+            <label for="linkedIn">LinkedIn</label>
+            <input type="checkbox" name="linkedIn" id="linkedIn">
+          </div>
+
+          <div>
+            <label for="codeAcademyRec">Code Academy Rec</label>
+            <input type="checkbox" name="codeAcademyRec" id="codeAcademyRec">
+          </div>
         </div>
 
+        
+
+        <!-- Contact section -->
         <div>
-          <label for="codeAcademyRec">Code Academy Rec</label>
-          <input type="checkbox" name="codeAcademyRec" id="codeAcademyRec">
+          Would you like to be contacted?
+          <div>
+            <label for="yesContact">Yes</label>
+            <input type="radio" name="yesContact" id="yesCotnact" value="Yes">
+          </div>
+
+          <div>
+            <label for="noContact">No</label>
+            <input type="radio" name="noContact" id="noCotnact" value="No">
+          </div>
         </div>
-      </div>
-
-      <!-- Contact section -->
-      <div>
-        Would you like to be contacted?
-        <div>
-          <label for="yesContact">Yes</label>
-          <input type="radio" name="yesContact" id="yesCotnact" value="Yes">
-        </div>
-
-        <div>
-          <label for="noContact">No</label>
-          <input type="radio" name="noContact" id="noCotnact" value="No">
-        </div>
-      </div>
-
-      <!-- Optional birthday wish -->
-      <div>
-        <label for="date">(Optional) <br> Enter your birthday to receive your birthday wish! <br> </label>
-        <input type="date" name="date" id="date" min="2019-06-10">
-      </div>
-
-      <!-- <input type="hidden" name="hidden" value="hi">
-      <div>
-        <label for="file">File</label>
-        <input id="file" type="file" name="file">
-      </div> -->
       
+        <!-- Textarea -->
+        <div>
+          <label for="bio">Comments</label><br>
+          <textarea id="commentsTextBox" name="bio" placeholder="comments" maxlength="500" minlength="30"></textarea>
+        </div>
 
-      <div>
-        <label>
-          Password
-          <input type="password" name="password" >
-        </label>
-      </div>
-      <button type="reset">Reset</button>
-      <button type="submit">Submit</button>
-    </form>
+        <div>
+          <label for="password">Password</label><br>
+          <input class="textBox"type="password" name="password">
+        </div>
+        <button class="buttons"type="reset">Reset</button>
+        <button class="buttons"type="submit">Submit</button>
+      </form>
+    </div>
   </div>
   <!-- <script src="scripts.js"></script> -->
 </body>
