@@ -6,17 +6,116 @@ body {
     justify-content: center;
     line-height: 30px;
     border: 2px solid gray;
-    width: 520px;
+    width: 500px;
+    min-width: 500px;
     margin: auto;
 }
 
 .form {
     margin-top: 10pt;
     margin-bottom: 10pt;
-    width: 500px;
+    width: 495px;
+    min-width:495px ;
     background-color: black;
     color: white;
 }
-@media (max-width: 700px) and (min-width){
 
+.alignForm {
+    margin-left: 20px;
+}
+
+/* for name and email */
+.textBox {
+    height:24px;
+    border-radius:4pt;
+    width: 150pt;
+}
+
+/* for the comments text box */
+#commentsTextBox {
+    width: 150pt;
+    border-radius: 4pt;
+}
+
+.buttons {
+    margin-top: 10pt;
+}
+/*  */
+/*  */
+/* This is the media query for a tablet screen*/
+@media (min-width: 481px) and (max-width: 768px){
+    body {
+        background-color: black;
+    }
+
+    #form-container{
+        display: flex;
+        justify-content: center;
+        line-height: 30px;
+        border: 2px solid white;
+        width: 485px;
+        min-width: 485px;
+        margin: auto;
+    }
+
+    .form {
+        margin-top: 10pt;
+        margin-bottom: 10pt;
+        width: 481px;
+        min-width: 481px;
+        background-color: black;
+        color: white;
+    }
+}
+/*  */
+/*  */
+    /* This is the media query for a phone screen */
+@media (min-width: 320px) and (max-width: 481px){
+        body {
+        background-color: red;
+    }
+    
+    #form-container{
+        display: flex;
+        justify-content: center;
+        line-height: 30px;
+        border: 2px solid black;
+        width: 360px;
+        margin: auto;
+        min-width: 360px;
+        background-color: red;
+    }
+    
+    .form {
+        margin-top: 10pt;
+        margin-bottom: 10pt;
+        max-width: 340px;
+        min-width: 339px;
+        background-color: black;
+        color: black;
+        background-color: red;
+    }
+
+    #optionalText {
+        max-width: 200px;
+        word-wrap: break-word;
+    }
+    
+    .textBox {
+        background: black;
+        color: white;
+    }
+
+    #commentsTextBox {
+        background-color: black;
+        color: white;
+    }
+
+    .buttons {
+        background-color: black;
+        color: white;
+        border-radius: 100px;
+    }
+
+    
 }
