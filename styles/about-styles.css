@@ -1,3 +1,22 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    color:white;
+}
+
 h1 {
-    
+    font-size: 100px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 500px);
+    grid-template-rows: repeat(2,400px);
+}
+
+img {
+    height: 400px;
+    width: 400px;
 }
