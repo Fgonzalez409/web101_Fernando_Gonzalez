@@ -8,7 +8,7 @@
     2. Remove default margin
   */
   * {
-    margin: 
+    margin: auto;
   }
   /*
     3. Allow percentage-based heights in the application
